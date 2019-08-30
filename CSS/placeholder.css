@@ -1,0 +1,52 @@
+.wrap{
+    position: fixed;
+    left: 100px;
+    top :100px;
+    background-color: #ff0000;
+    height: 40px;
+    width: 540px;
+}
+.wrap .placeHolderWrap{
+    display: none;
+}
+.wrap .placeHolderWrap.active{
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top : 2px;
+    z-index: 100;/*这两个怎么弄？要不无法在上面显示，要不就无法输入*/
+    margin-left: 5px;
+    height: 36px;
+    line-height: 36px;
+    width: 480px; 
+    color :#989898;
+
+}
+.wrap .inputWrap{
+    display: inline-block;
+    position: absolute;
+    z-index: 10;/*这两个怎么弄？要不无法在上面显示，要不就无法输入*/
+    left: 2px;
+    top : 2px;
+    height: 36px;
+    width: 480px; 
+  
+}
+.wrap input{
+    display: inline-block;
+    height: 32px;/*实际为什么多4PX?*/
+    width: 100%;
+}
+.wrap .searchWrap{
+    color :white;
+    width: 48px;
+    height: 38px;
+}
+.wrap .button{
+    
+    margin:1px 0 0 490px; 
+    height: 100%;
+    width: 100%;
+    background-color: #ff0000;
+    color: #fff;
+}
